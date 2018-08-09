@@ -87,6 +87,10 @@ There are a couple environment variables that can be used to tweak behavior:
 
 - `LOOKERBOT_DATA_ACTIONS_IN_MESSAGES` – Set this to `false` to disable making data action buttons available to Slack users.
 
+- `IMAGE_HEIGHT` - Set this to any positive integer value to control the height (in pixels) of generated charts.
+
+- `IMAGE_WIDTH` - Set this to any positive integer value to control the height (in pixels) of generated charts.
+
 ##### (optional) Storage Services for Visualization Images
 
 ###### Amazon S3

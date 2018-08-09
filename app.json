@@ -35,6 +35,14 @@
       "description": "If you want to use slash commands with the Slack bot, provide the verification token from the slash command setup page so that the bot can verify the integrity of incoming slash commands.",
       "required": false
     },
+    "IMAGE_WIDTH": {
+      "description": "The desired width you would like the charts to be output as",
+      "required": false
+    },
+    "IMAGE_HEIGHT": {
+      "description": "The desired height you would like the charts to be output as",
+      "required": false
+    },
     "SLACKBOT_S3_BUCKET": {
       "description": "If you want to use the Slack bot to post visualization images, provide an Amazon S3 bucket name.",
       "required": false
