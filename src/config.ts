@@ -6,6 +6,8 @@ const config = {
   debugMode: process.env.DEBUG_MODE === "true",
   enableGuestUsers: process.env.ALLOW_SLACK_GUEST_USERS === "true",
   enableSharedWorkspaces: process.env.ALLOW_SLACK_SHARED_WORKSPACES === "true",
+  imageHeight: process.env.IMAGE_HEIGHT,
+  imageWidth: process.env.IMAGE_WIDTH,
   lookerbotAuthorizationToken: (process.env.LOOKERBOT_AUTH_TOKEN as string | undefined),
   npmPackage: require("./../package.json"),
   slackApiKey: process.env.SLACK_API_KEY,

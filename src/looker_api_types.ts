@@ -59,6 +59,10 @@ export interface IQuery {
     show_view_names: boolean;
     [key: string]: any;
   }
+  dimensions: {
+   width: number;
+   height: number;
+  }
   client_id?: string | null // deprecated
   filter_config: any
   filters: IQueryFilters

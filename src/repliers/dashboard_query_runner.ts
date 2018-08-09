@@ -1,3 +1,4 @@
+import config from "../config"
 import { IDashboard, IQuery } from "../looker_api_types"
 import { ReplyContext } from "../reply_context"
 import { QueryRunner } from "./query_runner"
@@ -36,6 +37,7 @@ export class DashboardQueryRunner extends QueryRunner {
         queryDef = copy(element.query || element.look!.query)
         queryDef.filter_config = null
         queryDef.client_id = null
+        queryDef.dimensions = {width: config.imageWidth, height: config.imageHeight}
 
         if (element.listen) {
           for (const dashFilterName of Object.keys(element.listen)) {

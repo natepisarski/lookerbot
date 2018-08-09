@@ -113,7 +113,7 @@ export class QueryRunner extends FancyReplier {
     } else {
       try {
         const imageData = await this.replyContext.looker.client.getBinaryAsync(
-          `queries/${query.id}/run/png`,
+          `queries/${query.id}/run/png?width=${query.dimensions.width}&height=${query.dimensions.height}`,
           this.replyContext,
         )
         this.postImage(query, imageData)
