@@ -111,9 +111,10 @@ export class QueryRunner extends FancyReplier {
         this.replyError(e)
       }
     } else {
+      const queryString = (query.dimensions.width && query.dimensions.height && `?width=${query.dimensions.width}&height=${query.dimensions.height}`) || ""
       try {
         const imageData = await this.replyContext.looker.client.getBinaryAsync(
-          `queries/${query.id}/run/png?width=${query.dimensions.width}&height=${query.dimensions.height}`,
+          `queries/${query.id}/run/png${queryString}`,
           this.replyContext,
         )
         this.postImage(query, imageData)
