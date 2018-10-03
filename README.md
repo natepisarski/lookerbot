@@ -1,3 +1,11 @@
+# What is this fork?
+This is a fork of Lookerbot (described below, along with the full upstream README) with just one added feature: the ability to resize the images that it posts in Slack. By default, the images it posts are small to the point of being unreadable. This allows whoever is running the Lookerbot 'server' to configure what the size of the posted images will be. Seeing as Slack has its own scaling algorithm, this is set to Looker's maximum (1500px by 1500px).
+
+# What is this?
+This is a fork of Lookerbot. If you're unsure what Lookerbot does, I've left the full README from the upstream repository below. To summarize, it's a Slack bot that is able to generate charts from Looker (an analytics tool - specifically useful for the non-technical to extract business insights from semi-structured data).
+
+Individual Looker user licenses are very expensive, so the benefit of Lookerbot is that those without licenses can still explore the data from Looker via Slack (even without voiding the TOS!) 
+
 # Lookerbot
 
 Lookerbot integrates [Slack](https://slack.com) and [Looker](https://looker.com) to put all your data at your fingertips. 
